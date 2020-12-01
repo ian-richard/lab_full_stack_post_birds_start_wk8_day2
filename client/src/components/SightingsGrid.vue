@@ -6,9 +6,26 @@
 
 <script>
 import Sighting from './Sighting';
+import { eventBus } from '@/main.js';
+import SightingService from '../services/SightingService'
 
 export default {
 	name: 'sightings-grid',
+	// data(){
+	// 	return {
+	// 		sightings: []
+	// 	};
+	// },
+	// mounted(){
+	// 	SightingService.getSightings()
+	// 	.then(sightings => this.sightings = sightings);
+	
+	// 	eventBus.$on('sighting-added', (sighting) => {
+	// 		this.sightings.push(sighting)
+	// 	})
+
+	// }
+	
 	components: {
 		'sighting': Sighting
 	},
